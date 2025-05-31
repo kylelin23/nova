@@ -8,7 +8,4 @@ def fetch_stock_market_vars():
     ticker = yf.Ticker(ticker_symbol)
     historical_data = ticker.history(period="5y")
     financials = ticker.financials
-    print("\nFinancials:")
-    print(financials)
-
-fetch_stock_market_vars()
+    return(financials)

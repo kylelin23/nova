@@ -35,7 +35,3 @@ def parse_article(article):
             content += paragraph.get_text() + " "
 
     return ('Author: ' + author + '\nContent: ' + content)
-
-
-article = fetch_news_articles()[0]
-print(parse_article(article))
