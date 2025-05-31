@@ -33,6 +33,7 @@ def parse_article(article):
     for paragraph in paragraphs:
         if 'atoms-wrapper' in paragraph.parent.get('class', []):
             content += paragraph.get_text() + " "
+
     return ('Author: ' + author + '\nContent: ' + content)
 
 
